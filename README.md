@@ -27,11 +27,11 @@ Three interactive, self-contained HTML diagrams explain the proposed Meyppaattiy
 
 | Diagram | What it shows | Open |
 |---|---|---|
-| Full system architecture | Components and information flow from the Tamil Prompt Standard layer to the final empathetic response | [Interactive HTML](architecture/system-architecture.html) |
-| Chatbot runtime | Request sequence across classification, anomaly detection, state transitions, and response generation | [Interactive HTML](architecture/chatbot-runtime.html) |
-| Anomaly detection | Decision flow mapping the four *marutkai* factors to modern anomaly categories | [Interactive HTML](architecture/anomaly-detection.html) |
+| Full system architecture | Components and information flow from the Tamil Prompt Standard layer to the final empathetic response | [Interactive HTML](https://kpassoubady.github.io/tholkappium-meyppaattiyal/architecture.html#system-architecture) |
+| Chatbot runtime | Request sequence across classification, anomaly detection, state transitions, and response generation | [Interactive HTML](https://kpassoubady.github.io/tholkappium-meyppaattiyal/architecture.html#chatbot-runtime) |
+| Anomaly detection | Decision flow mapping the four *marutkai* factors to modern anomaly categories | [Interactive HTML](https://kpassoubady.github.io/tholkappium-meyppaattiyal/architecture.html#anomaly-detection) |
 
-The complete bilingual architecture notes, embedded Mermaid diagrams, conceptual mapping, and future-work roadmap are in [architecture/architecture.md](architecture/architecture.md). Download an HTML file and open it locally for the interactive viewer; GitHub’s repository view displays HTML source rather than running it.
+The complete bilingual architecture notes, embedded Mermaid diagrams, conceptual mapping, and future-work roadmap are in [architecture/architecture.md](architecture/architecture.md). Diagrams run live on the [website](https://kpassoubady.github.io/tholkappium-meyppaattiyal/architecture.html); GitHub’s repository view displays the underlying HTML source rather than running it, so download a file and open it locally if you need the interactive viewer offline.
 
 ## ஆய்வின் ஒப்புமைகள் / Comparisons
 
@@ -84,6 +84,7 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 | GitHub (this paper) | [tholkappium-meyppaattiyal](https://github.com/kpassoubady/tholkappium-meyppaattiyal) |
 | GitHub (Tamil Prompt Standard) | [tamil-prompt-standard](https://github.com/kpassoubady/tamil-prompt-standard) |
 | GitHub (Tamil glossary) | [tamil-glossary](https://github.com/kpassoubady/tamil-glossary) |
+| GitHub (Tholkappiyam books collection) | [tamil-tholkappium](https://github.com/kpassoubady/tamil-tholkappium) |
 | LinkedIn | [kpassoubady](https://www.linkedin.com/in/kpassoubady/) |
 
 ## License
