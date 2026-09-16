@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "diagram_type": "dataflow",
+  "meta": {
+    "title": "இயல்பு விலகல் கண்டறிதல் ஓட்டம் (Anomaly Detection Pipeline)",
+    "output": "anomaly-detection.html",
+    "viewBox": [1080, 610],
+    "quality_profile": "showcase",
+    "views": [
+      { "id": "distribution-check", "label": "பரவல் சோதனை / Distribution check", "focus": ["input", "check", "normal"], "note": "புதிய உள்ளீடு முன் அனுபவப் பரவலுக்கு வெளியே உள்ளதா எனச் சோதிக்கும் படி / Whether the new input falls outside the prior distribution." },
+      { "id": "wonder-classification", "label": "மருட்கை வகைப்பாடு / Wonder-factor classification", "focus": ["check", "classify", "point", "contextualHigh", "contextualLow", "collective"], "note": "நான்கு மருட்கைக் காரணிகளின் வகைப்பாடு / The four wonder-factor classifications." },
+      { "id": "fsm-handoff", "label": "FSM கையளிப்பு / FSM handoff", "focus": ["point", "contextualHigh", "contextualLow", "collective", "handoff"], "note": "அனைத்து அசாதாரண வகைகளும் FSM நினைதல் நிலைக்கு மாறும் / All anomaly types converge into the FSM's நினைதல் state." }
+    ]
+  },
+  "stages": [
+    { "label": "உள்ளீடு / Input" },
+    { "label": "பரவல் சோதனை / Distribution Check" },
+    { "label": "மருட்கை வகைப்பாடு / Classification" },
+    { "label": "அசாதாரண வகைகள் / Anomaly Types" },
+    { "label": "FSM கையளிப்பு / Handoff" }
+  ],
+  "nodes": [
+    { "id": "input", "type": "external", "label": "புதிய உள்ளீடு", "sublabel": "New Input", "stage": 0, "row": 1, "width": 145 },
+    { "id": "check", "type": "backend", "label": "பரவலுக்கு வெளியேயா?", "sublabel": "Outside Prior Distribution?", "stage": 1, "row": 1, "width": 160 },
+    { "id": "normal", "type": "database", "label": "இயல்பு நிகழ்வு", "sublabel": "Normal — நடுவுநிலை தொடர்கிறது", "stage": 2, "row": 0, "width": 160 },
+    { "id": "classify", "type": "backend", "label": "மருட்கைக் காரணி வகைப்பாடு", "sublabel": "Wonder-factor Classification", "tag": "தொல். பொ. 1198", "stage": 2, "row": 2, "width": 160 },
+    { "id": "point", "type": "database", "label": "Point Anomaly", "sublabel": "புதுமை / Novelty", "stage": 3, "row": 0, "width": 155 },
+    { "id": "contextualHigh", "type": "database", "label": "Contextual (high-tail)", "sublabel": "பெருமை / Magnitude", "stage": 3, "row": 1, "width": 150 },
+    { "id": "contextualLow", "type": "database", "label": "Contextual (low-tail)", "sublabel": "சிறுமை / Smallness", "stage": 3, "row": 2, "width": 145 },
+    { "id": "collective", "type": "database", "label": "Collective Anomaly", "sublabel": "ஆக்கம் / Generative Force", "stage": 3, "row": 3, "width": 160 },
+    { "id": "handoff", "type": "backend", "label": "FSM: நினைதல் மாற்றம்", "sublabel": "Transition to நினைதல்", "stage": 4, "row": 1, "width": 160 }
+  ],
+  "flows": [
+    { "id": "input-to-check", "from": "input", "to": "check", "label": "பரவல் சோதனை / distribution test", "variant": "emphasis", "labelAt": [204, 314] },
+    { "id": "check-to-normal", "from": "check", "to": "normal", "label": "இல்லை / No" },
+    { "id": "check-to-classify", "from": "check", "to": "classify", "label": "ஆம் / Yes", "variant": "emphasis" },
+    { "id": "classify-to-point", "from": "classify", "to": "point", "label": "புதுமை / Novelty", "labelAt": [500, 240] },
+    { "id": "classify-to-high", "from": "classify", "to": "contextualHigh", "label": "பெருமை / Magnitude", "labelAt": [500, 300] },
+    { "id": "classify-to-low", "from": "classify", "to": "contextualLow", "label": "சிறுமை / Smallness", "labelAt": [500, 428] },
+    { "id": "classify-to-collective", "from": "classify", "to": "collective", "label": "ஆக்கம் / Generative Force", "labelAt": [500, 490] },
+    { "id": "point-to-handoff", "from": "point", "to": "handoff", "label": "Point → FSM", "labelAt": [990, 200] },
+    { "id": "high-to-handoff", "from": "contextualHigh", "to": "handoff", "label": "High-tail → FSM", "labelAt": [990, 314] },
+    { "id": "low-to-handoff", "from": "contextualLow", "to": "handoff", "label": "Low-tail → FSM", "labelAt": [990, 428] },
+    { "id": "collective-to-handoff", "from": "collective", "to": "handoff", "label": "Collective → FSM", "labelAt": [990, 490] }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "தீர்மான தர்க்கம் / Decision Logic", "items": ["பரவலுக்கு வெளியே உள்ளதா எனச் சோதிக்கப்படுகிறது; இல்லையெனில் இயல்பு நிகழ்வு, ஆம் எனில் வகைப்பாடு தொடங்குகிறது"] },
+    { "dot": "emerald", "title": "4 மருட்கைக் காரணிகள் (தொல். பொ. 1198)", "items": ["புதுமை → Point · பெருமை → Contextual (high) · சிறுமை → Contextual (low) · ஆக்கம் → Collective"] },
+    { "dot": "violet", "title": "மேற்கோள் / Citation", "items": ["Chandola, Banerjee & Kumar (2009, பக். 15) — §5.2, அட்டவணை 2-இல் மருட்கைக் காரணி ↔ Anomaly வகை ஒப்புமை"] }
+  ]
+}

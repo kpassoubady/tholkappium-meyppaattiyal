@@ -17,6 +17,20 @@ A Tamil research paper that compares the Tholkappiyam's Meyppaattiyal with moder
 | State-transition diagram | [Mermaid](diagrams/state-transition.mmd) | [PNG](diagrams/state-transition.png) |
 | Conceptual-system diagram | [Mermaid](diagrams/system-architecture.mmd) | [PNG](diagrams/system-architecture.png) |
 
+## கட்டமைப்பு / Architecture
+
+மெய்ப்பாட்டியல் சார்ந்த உணர்வுசார் AI முன்மாதிரியை மூன்று ஊடாடும், தனித்த HTML வரைபடங்கள் விளக்குகின்றன. ஒவ்வொரு வரைபடத்திலும் ஒளி/இருள் தோற்றம், பெரிதாக்கம், தேடல், தொடர்புத் தடமறிதல், ஏற்றுமதி ஆகிய வசதிகள் உள்ளன.
+
+Three interactive, self-contained HTML diagrams explain the proposed Meyppaattiyal-informed affective-AI model:
+
+| Diagram | What it shows | Open |
+|---|---|---|
+| Full system architecture | Components and information flow from the Tamil Prompt Standard layer to the final empathetic response | [Interactive HTML](architecture/system-architecture.html) |
+| Chatbot runtime | Request sequence across classification, anomaly detection, state transitions, and response generation | [Interactive HTML](architecture/chatbot-runtime.html) |
+| Anomaly detection | Decision flow mapping the four *marutkai* factors to modern anomaly categories | [Interactive HTML](architecture/anomaly-detection.html) |
+
+The complete bilingual architecture notes, embedded Mermaid diagrams, conceptual mapping, and future-work roadmap are in [architecture/architecture.md](architecture/architecture.md). Download an HTML file and open it locally for the interactive viewer; GitHub’s repository view displays HTML source rather than running it.
+
 ## ஆய்வின் ஒப்புமைகள் / Comparisons
 
 | தொல்காப்பியம் | நவீனக் கணினியியல் / Modern computing |
@@ -31,7 +45,21 @@ These are structural comparisons across distinct intellectual traditions. The pa
 
 Prepared for the **2nd World Tolkappiyam Research Conference**, Toronto, Canada, September 19–20, 2026. Conference reference: **தொ.மா.2098**.
 
-The files in this repository are privacy-redacted public editions. Submission records and working research material are not included.
+### தேர்வுச் சான்றுகள் / Selection records
+
+| Record | Document |
+|---|---|
+| Abstract selection notice, May 7, 2026 | [PDF](conference-records/Abstract_Selected_தொ.மா.2098.pdf) |
+| Full-article selection notice, August 23, 2026 | [PDF](conference-records/Article_Selected_தொ.மா.2098.pdf) |
+
+### மாநாட்டு ஆவணங்கள் / Conference materials
+
+| Material | Document |
+|---|---|
+| Conference announcement and call for papers | [PDF](requirements/Tolkapiyam%20Conference%20Sep%202026.pdf) |
+| Evaluation report for 336 submitted abstracts, April 2026 | [PDF](requirements/ஆய்வுச்%20சுருக்கம்%20மதிப்பீட்டு%20அறிக்கை%20ஏப்ரல்%202026.pdf) |
+
+The selection records are included as provenance for the abstract and article. Conference-issued PDFs retain the organizers’ published contact and committee information; third-party material remains subject to its original rights.
 
 ## Citation
 
