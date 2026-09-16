@@ -49,8 +49,8 @@ Prepared for the **2nd World Tolkappiyam Research Conference**, Toronto, Canada,
 
 | Record | Document |
 |---|---|
-| Abstract selection notice, May 7, 2026 | [PDF](docs/Abstract_Selected_தொ.மா.2098.pdf) |
-| Full-article selection notice, August 23, 2026 | [PDF](docs/Article_Selected_தொ.மா.2098.pdf) |
+| Abstract selection notice, May 7, 2026 | [PDF](conference-records/Abstract_Selected_தொ.மா.2098.pdf) |
+| Full-article selection notice, August 23, 2026 | [PDF](conference-records/Article_Selected_தொ.மா.2098.pdf) |
 
 ### மாநாட்டு ஆவணங்கள் / Conference materials
 
