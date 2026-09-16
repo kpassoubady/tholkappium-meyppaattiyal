@@ -1,0 +1,10 @@
+graph TD
+    A[பயனர் தூண்டுவினா / User Prompt] --> B[TPS அடுக்கு / Tamil Prompt Standard Layer]
+    B --> C{மெய்ப்பாட்டியல் தர்க்க இயந்திரம் / Meyppattiyal Logic Engine}
+    C -->|8 மெய்ப்பாடுகள்| D1[உணர்வு வகைப்பாடு / Emotion Classification]
+    C -->|மருட்கை விதி| D2[இயல்பு விலகல் கண்டறிதல் / Anomaly Detection]
+    C -->|32 நிலைகள்| D3[நிலை இயந்திரம் / FSM Engine]
+    D1 --> E[உணர்வுசார் செயலாக்கம் / Affective Processing]
+    D2 --> E
+    D3 --> E
+    E --> F[உணர்ச்சிகரமான பதில் / Empathetic Response]

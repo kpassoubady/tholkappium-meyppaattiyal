@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+title: "செய்யறிவும் செம்மொழியும்: மெய்ப்பாட்டியல் மற்றும் உணர்வுக் கண்டறிதல் தொழில்நுட்பங்களின் இணை வளர்ச்சிப் பார்வை"
+type: article
+authors:
+  - family-names: Passoubady
+    given-names: Kangeyan
+repository-code: "https://github.com/kpassoubady/tholkappium-meyppaattiyal"
+url: "https://github.com/kpassoubady/tholkappium-meyppaattiyal"
+license: CC-BY-4.0
+version: 1.0.0
+date-released: 2026-09-16
+abstract: "A Tamil research paper comparing Meyppaattiyal and modern emotion-detection technologies through parallel development and comparable conceptualization."
