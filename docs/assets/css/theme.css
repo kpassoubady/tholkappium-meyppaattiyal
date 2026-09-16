@@ -1,0 +1,197 @@
+:root {
+  --pine: #0f3d3e;
+  --pine-deep: #0a2c2d;
+  --cream: #f5f0e1;
+  --gold: #e8b13a;
+  --gold-soft: #f0c96a;
+  --maroon: #8c2f2f;
+  --ink: #16201f;
+}
+
+body {
+  background-color: var(--pine);
+  color: var(--cream);
+  font-family: "Noto Sans Tamil", "Segoe UI", system-ui, sans-serif;
+}
+
+a {
+  color: var(--gold-soft);
+}
+a:hover {
+  color: var(--gold);
+}
+
+.site-nav {
+  background-color: var(--pine-deep);
+  border-bottom: 3px solid var(--gold);
+}
+.site-nav .navbar-brand,
+.site-nav .nav-link {
+  color: var(--cream) !important;
+  font-weight: 600;
+}
+.site-nav .nav-link.active,
+.site-nav .nav-link:hover {
+  color: var(--gold) !important;
+}
+
+.hero {
+  background: linear-gradient(180deg, var(--pine-deep) 0%, var(--pine) 100%);
+  background-image: url("../img/texture-olai.png"), linear-gradient(180deg, var(--pine-deep) 0%, var(--pine) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: soft-light;
+  border-bottom: 4px solid var(--gold);
+}
+
+.hero h1 {
+  color: var(--gold);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.hero .subtitle {
+  color: var(--cream);
+  opacity: 0.92;
+}
+
+.pill-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background-color: var(--gold);
+  color: var(--pine-deep);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+.pill-badge.maroon {
+  background-color: var(--maroon);
+  color: var(--cream);
+}
+
+.card-accent {
+  background-color: var(--cream);
+  color: var(--ink);
+  border: none;
+  border-left: 6px solid var(--gold);
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+.card-accent.maroon-accent {
+  border-left-color: var(--maroon);
+}
+.card-accent h3,
+.card-accent h4,
+.card-accent h5 {
+  color: var(--pine-deep);
+}
+
+.section-divider {
+  height: 90px;
+  background-image: url("../img/texture-olai.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+}
+
+.section-dark {
+  background-color: var(--pine-deep);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--pine-deep);
+  font-weight: 700;
+}
+.btn-gold:hover {
+  background-color: var(--gold-soft);
+  border-color: var(--gold-soft);
+  color: var(--pine-deep);
+}
+.btn-outline-gold {
+  border-color: var(--gold);
+  color: var(--gold);
+  font-weight: 700;
+}
+.btn-outline-gold:hover {
+  background-color: var(--gold);
+  color: var(--pine-deep);
+}
+
+.diagram-card iframe {
+  width: 100%;
+  height: 480px;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #0b1f1f;
+}
+.diagram-thumb {
+  width: 100%;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(232, 177, 58, 0.35);
+}
+
+.site-footer {
+  background-color: var(--pine-deep);
+  border-top: 3px solid var(--gold);
+  color: var(--cream);
+}
+.site-footer a {
+  color: var(--gold-soft);
+}
+
+.tamil-block {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+article.paper h1,
+article.paper h2,
+article.paper h3,
+article.paper h4 {
+  color: var(--pine-deep);
+}
+article.paper table {
+  width: 100%;
+}
+article.paper table th {
+  background-color: var(--pine-deep);
+  color: var(--cream);
+}
+article.paper table td,
+article.paper table th {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(15, 61, 62, 0.2);
+}
+article.paper blockquote {
+  border-left: 4px solid var(--maroon);
+  padding-left: 1rem;
+  color: #3a3a3a;
+  font-style: italic;
+}
+article.paper img {
+  max-width: 100%;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: 85vh;
+  border: 2px solid var(--gold);
+  border-radius: 0.4rem;
+}
+
+.author-photo {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 50%;
+  border: 4px solid var(--gold);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.quote-block {
+  border-left: 4px solid var(--gold);
+  padding-left: 1.25rem;
+  font-style: italic;
+  color: var(--cream);
+}

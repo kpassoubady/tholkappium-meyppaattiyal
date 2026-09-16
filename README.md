@@ -8,6 +8,8 @@
 
 A Tamil research paper that compares the Tholkappiyam's Meyppaattiyal with modern emotion-detection technologies through parallel development and comparable conceptualization—not direct equivalence.
 
+**🌐 Website:** <https://kpassoubady.github.io/tholkappium-meyppaattiyal/>
+
 ## படிக்கவும் / Read
 
 | Material | Source | Download |
@@ -70,6 +72,19 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 ## Author
 
 **Kangeyan Passoubady / காங்கேயன் பசுபதி**
+
+நிறுவனர், கவின் பள்ளி (Kavin School) · எழுத்துலகில் ‘கங்கா’ என்ற புனைபெயரில் அறியப்படுபவர். 28 ஆண்டுகளுக்கும் மேலாக உலகளாவிய தகவல் தொழில்நுட்பத் துறையில் பணியாற்றிய மூத்த தொழில்நுட்ப வல்லுநர்.
+
+*A senior technology professional with 28+ years in global IT (from Silicon Valley to leading Indian enterprises, specializing in software quality and automation), Kangeyan Passoubady (pen name “Ganga” in Tamil literary circles) writes at the intersection of software engineering and the Tamil language. This paper reflects that dual commitment: examining how classical Tamil intellectual traditions like Tholkappiyam relate, structurally, to modern AI concepts. Related work includes the Tamil Prompt Standard (a framework for defining AI prompts in Tamil) and tamil-glossary (a Tamil technical-terminology project).*
+
+### Links
+
+| | |
+|---|---|
+| GitHub (this paper) | [tholkappium-meyppaattiyal](https://github.com/kpassoubady/tholkappium-meyppaattiyal) |
+| GitHub (Tamil Prompt Standard) | [tamil-prompt-standard](https://github.com/kpassoubady/tamil-prompt-standard) |
+| GitHub (Tamil glossary) | [tamil-glossary](https://github.com/kpassoubady/tamil-glossary) |
+| LinkedIn | [kpassoubady](https://www.linkedin.com/in/kpassoubady/) |
 
 ## License
 
