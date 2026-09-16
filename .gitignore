@@ -3,3 +3,4 @@
 *.tmp
 architecture/*.visual-check.*
 .playwright-mcp/
+.claude/

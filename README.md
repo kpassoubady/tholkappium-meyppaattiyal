@@ -6,7 +6,7 @@
 
 தொல்காப்பிய மெய்ப்பாட்டியலையும் நவீன உணர்வுக் கண்டறிதல் தொழில்நுட்பங்களையும் நேரடிச் சமன்பாடாகக் கொள்ளாமல், இணை வளர்ச்சி மற்றும் ஒப்பிடத்தக்க கருத்துருவாக்கம் வழியாக ஆராயும் தமிழாய்வுக் கட்டுரை.
 
-A Tamil research paper that compares the Tholkappiyam's Meyppaattiyal with modern emotion-detection technologies through parallel development and comparable conceptualization—not direct equivalence.
+A Tamil research paper that compares the Tolkappiyam's Meyppaattiyal with modern emotion-detection technologies through parallel development and comparable conceptualization—not direct equivalence.
 
 **🌐 Website:** <https://kpassoubady.github.io/tholkappium-meyppaattiyal/>
 
@@ -75,7 +75,7 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 
 நிறுவனர், கவின் பள்ளி (Kavin School) · எழுத்துலகில் ‘கங்கா’ என்ற புனைபெயரில் அறியப்படுபவர். 28 ஆண்டுகளுக்கும் மேலாக உலகளாவிய தகவல் தொழில்நுட்பத் துறையில் பணியாற்றிய மூத்த தொழில்நுட்ப வல்லுநர்.
 
-*A senior technology professional with 28+ years in global IT (from Silicon Valley to leading Indian enterprises, specializing in software quality and automation), Kangeyan Passoubady (pen name “Ganga” in Tamil literary circles) writes at the intersection of software engineering and the Tamil language. This paper reflects that dual commitment: examining how classical Tamil intellectual traditions like Tholkappiyam relate, structurally, to modern AI concepts. Related work includes the Tamil Prompt Standard (a framework for defining AI prompts in Tamil) and tamil-glossary (a Tamil technical-terminology project).*
+*A senior technology professional with 28+ years in global IT (from Silicon Valley to leading Indian enterprises, specializing in software quality and automation), Kangeyan Passoubady (pen name “Ganga” in Tamil literary circles) writes at the intersection of software engineering and the Tamil language. This paper reflects that dual commitment: examining how classical Tamil intellectual traditions like Tolkappiyam relate, structurally, to modern AI concepts. Related work includes the Tamil Prompt Standard (a framework for defining AI prompts in Tamil) and tamil-glossary (a Tamil technical-terminology project).*
 
 ### Links
 
@@ -84,7 +84,7 @@ Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
 | GitHub (this paper) | [tholkappium-meyppaattiyal](https://github.com/kpassoubady/tholkappium-meyppaattiyal) |
 | GitHub (Tamil Prompt Standard) | [tamil-prompt-standard](https://github.com/kpassoubady/tamil-prompt-standard) |
 | GitHub (Tamil glossary) | [tamil-glossary](https://github.com/kpassoubady/tamil-glossary) |
-| GitHub (Tholkappiyam books collection) | [tamil-tholkappium](https://github.com/kpassoubady/tamil-tholkappium) |
+| GitHub (Tolkappiyam books collection) | [tamil-tholkappium](https://github.com/kpassoubady/tamil-tholkappium) |
 | LinkedIn | [kpassoubady](https://www.linkedin.com/in/kpassoubady/) |
 
 ## License
