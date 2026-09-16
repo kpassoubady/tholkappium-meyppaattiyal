@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "முழுமையான அமைப்புக் கட்டமைப்பு (Full System Architecture)",
+    "output": "system-architecture.html",
+    "quality_profile": "showcase",
+    "views": [
+      { "id": "main-path", "label": "முதன்மைப் பாதை / Main path", "focus": ["prompt", "tps", "engine", "affective", "ere", "response"], "note": "பயனர் தூண்டுவினாவிலிருந்து இறுதிப் பதில் வரையிலான முதன்மை ஓட்டம் / The primary flow from user prompt to final response." },
+      { "id": "sub-modules", "label": "தர்க்க உள்கூறுகள் / Logic sub-modules", "focus": ["engine", "emotion", "anomaly", "fsm", "affective"], "note": "மெய்ப்பாட்டியல் தர்க்க இயந்திரத்தின் மூன்று உள்கூறுகள் / The three sub-modules inside the Meyppattiyal Logic Engine." },
+      { "id": "response-gen", "label": "பதில் உருவாக்கம் / Response generation", "focus": ["affective", "ere", "response"], "note": "உணர்வுசார் செயலாக்கத்திலிருந்து இறுதிப் பதில் வரை / From affective processing to the delivered response." }
+    ]
+  },
+  "components": [
+    { "id": "prompt", "type": "external", "label": "பயனர் தூண்டுவினா", "sublabel": "User Prompt", "pos": [30, 300], "size": [110, 64] },
+    { "id": "tps", "type": "frontend", "label": "TPS அடுக்கு", "sublabel": "Prompt Layer", "pos": [190, 300], "size": [105, 64] },
+    { "id": "engine", "type": "backend", "label": "தர்க்க இயந்திரம்", "sublabel": "Logic Engine", "pos": [345, 300], "size": [130, 64] },
+    { "id": "emotion", "type": "backend", "label": "உணர்வு வகைப்பாடு", "sublabel": "Emotion Classification", "tag": "தொல். பொ. 1194", "pos": [545, 130], "size": [140, 64] },
+    { "id": "anomaly", "type": "backend", "label": "இயல்பு விலகல்", "sublabel": "Anomaly Detection", "tag": "தொல். பொ. 1198", "pos": [545, 300], "size": [140, 64] },
+    { "id": "fsm", "type": "backend", "label": "நிலை இயந்திரம்", "sublabel": "FSM Engine", "tag": "தொல். பொ. 1192-1203", "pos": [545, 470], "size": [140, 64] },
+    { "id": "affective", "type": "backend", "label": "உணர்வுசார் செயலாக்கம்", "sublabel": "Affective Processing", "pos": [745, 300], "size": [140, 64] },
+    { "id": "ere", "type": "backend", "label": "உணர்ச்சிகரப் பதில்", "sublabel": "Empathetic Response Engine", "pos": [945, 300], "size": [155, 64] },
+    { "id": "response", "type": "external", "label": "இறுதிப் பதில்", "sublabel": "Final Response", "pos": [1160, 300], "size": [110, 64] }
+  ],
+  "boundaries": [
+    { "kind": "region", "label": "மெய்ப்பாட்டியல் தர்க்க இயந்திரம் — உள்கூறுகள் / Logic Engine Sub-modules", "wraps": ["emotion", "anomaly", "fsm"], "pad": 24 }
+  ],
+  "connections": [
+    { "id": "prompt-to-tps", "from": "prompt", "to": "tps", "variant": "emphasis" },
+    { "id": "tps-to-engine", "from": "tps", "to": "engine", "variant": "emphasis" },
+    { "id": "engine-to-emotion", "from": "engine", "to": "emotion", "label": "8 மெய்ப்பாடுகள்", "fromSide": "top", "toSide": "left" },
+    { "id": "engine-to-anomaly", "from": "engine", "to": "anomaly", "label": "மருட்கை விதி" },
+    { "id": "engine-to-fsm", "from": "engine", "to": "fsm", "label": "32 நிலைகள்", "fromSide": "bottom", "toSide": "left" },
+    { "id": "emotion-to-affective", "from": "emotion", "to": "affective", "fromSide": "right", "toSide": "top" },
+    { "id": "anomaly-to-affective", "from": "anomaly", "to": "affective" },
+    { "id": "fsm-to-affective", "from": "fsm", "to": "affective", "fromSide": "right", "toSide": "bottom" },
+    { "id": "affective-to-ere", "from": "affective", "to": "ere", "variant": "emphasis" },
+    { "id": "ere-to-response", "from": "ere", "to": "response", "variant": "emphasis" }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "முதன்மை ஓட்டம் / Main Flow", "items": ["User Prompt → TPS Layer → Meyppattiyal Logic Engine → Empathetic Response Engine → Final Response", "TPS அடுக்கு தமிழ் தூண்டுவினாவை நெறிப்படுத்துகிறது"] },
+    { "dot": "emerald", "title": "மூன்று உள்கூறுகள் / Three Sub-modules", "items": ["8 மெய்ப்பாடுகள் (தொல். பொ. 1194) → Emotion Classification", "மருட்கை விதி (தொல். பொ. 1198) → Anomaly Detection", "32 நிலைகள் (தொல். பொ. 1192-1203) → FSM Engine"] },
+    { "dot": "violet", "title": "மூடிய சுழற்சி / Closed Loop", "items": ["மூன்று உள்கூறுகளின் வெளியீடும் Affective Processing-இல் ஒன்றிணைகிறது", "ERE பண்பாட்டு உணர்வுச் சாய்வுகளுடன் இறுதிப் பதிலை உருவாக்குகிறது"] }
+  ]
+}
