@@ -146,6 +146,17 @@ a:hover {
   line-height: 1.9;
 }
 
+.card-accent .table {
+  color: var(--ink);
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: rgba(15, 61, 62, 0.05);
+  --bs-table-hover-bg: rgba(232, 177, 58, 0.12);
+}
+.card-accent .table td,
+.card-accent .table th {
+  border-color: rgba(15, 61, 62, 0.2);
+}
+
 article.paper h1,
 article.paper h2,
 article.paper h3,
