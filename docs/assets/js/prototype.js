@@ -367,6 +367,14 @@
     return card;
   }
 
+  function scrollToWorkflow() {
+    if (!els.workflowStatus) return;
+    els.workflowStatus.scrollIntoView({
+      behavior: prefersReducedMotion() ? "auto" : "smooth",
+      block: "start"
+    });
+  }
+
   function moveFocus(target) {
     if (!target) return;
     target.setAttribute("tabindex", "-1");
@@ -393,6 +401,7 @@
     }
     resetScenarioSurfaces();
     setText(els.workflowStatus, "செயலோட்டம் / Application workflow");
+    scrollToWorkflow();
     renderUserPrompt(scenario, displayPrompt);
     renderTps(scenario);
     renderEvidence(scenario);

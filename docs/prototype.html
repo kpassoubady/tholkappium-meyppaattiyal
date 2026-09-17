@@ -22,7 +22,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="paper.html">Paper</a></li>
         <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
-        <li class="nav-item"><a class="nav-link active" href="prototype.html">செயல்விளக்கம் / Prototype</a></li>
+        <li class="nav-item"><a class="nav-link active" href="prototype.html">Prototype</a></li>
         <li class="nav-item"><a class="nav-link" href="presentation.html">Presentation</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About the Author</a></li>
       </ul>
@@ -60,6 +60,15 @@
 
       <div class="prototype-column prototype-left">
         <div class="card card-accent p-3 p-lg-4 mb-4">
+          <h3 class="h5">உள்ளீடு / Type a prompt</h3>
+          <form id="prototype-form" class="d-flex flex-column gap-2" novalidate>
+            <label class="form-label small mb-0" for="prompt-input">ஆதரிக்கப்படும் சொற்கள்: மருட்கை, நினைதல், கருதல், ஆராய்ச்சி, ஐயம், படம், காணொளி, image, video.</label>
+            <input type="text" id="prompt-input" class="form-control" placeholder="உதாரணம்: மருட்கை" autocomplete="off">
+            <button type="submit" class="btn btn-gold align-self-start">அனுப்புக / Submit</button>
+          </form>
+        </div>
+
+        <div class="card card-accent p-3 p-lg-4 mb-4">
           <h3 class="h5">எடுத்துக்காட்டுகள் / Suggested prompts</h3>
           <p class="small mb-3">கீழுள்ள மூன்று பொத்தான்களில் ஒன்றைத் தேர்ந்தெடுக்கவும். அல்லது ஆதரிக்கப்படும் சொற்களைத் தட்டச்சு செய்யவும்.</p>
           <div class="d-flex flex-column gap-2">
@@ -67,15 +76,6 @@
             <button type="button" class="scenario-prompt btn btn-prompt" data-scenario="image-ninaital">நினைதல் நிலைக்கான படம் உருவாக்குக</button>
             <button type="button" class="scenario-prompt btn btn-prompt" data-scenario="video-state-path">ஐந்து நிலைமாற்றங்களைக் காணொளியாகக் காட்டுக</button>
           </div>
-        </div>
-
-        <div class="card card-accent p-3 p-lg-4 mb-4">
-          <h3 class="h5">உள்ளீடு / Type a prompt</h3>
-          <form id="prototype-form" class="d-flex flex-column gap-2" novalidate>
-            <label class="form-label small mb-0" for="prompt-input">ஆதரிக்கப்படும் சொற்கள்: மருட்கை, நினைதல், கருதல், ஆராய்ச்சி, ஐயம், படம், காணொளி, image, video.</label>
-            <input type="text" id="prompt-input" class="form-control" placeholder="உதாரணம்: மருட்கை" autocomplete="off">
-            <button type="submit" class="btn btn-gold align-self-start">அனுப்புக / Submit</button>
-          </form>
         </div>
 
         <div class="card card-accent p-3 p-lg-4 mb-4">

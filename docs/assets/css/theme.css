@@ -269,6 +269,9 @@ article.paper img {
 .scenario-prompt {
   scroll-margin-top: 5rem;
 }
+#workflow-status {
+  scroll-margin-top: 5rem;
+}
 .btn-prompt:hover {
   background-color: var(--gold);
   color: var(--pine-deep);
