@@ -15,10 +15,10 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg site-nav sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">செய்யறிவும் செம்மொழியும்</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" style="border-color:var(--gold)">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation" style="border-color:var(--gold)">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMain">
@@ -26,6 +26,7 @@
         <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="paper.html">Paper</a></li>
         <li class="nav-item"><a class="nav-link" href="architecture.html">Architecture</a></li>
+        <li class="nav-item"><a class="nav-link" href="prototype.html">செயல்விளக்கம் / Prototype</a></li>
         <li class="nav-item"><a class="nav-link" href="presentation.html">Presentation</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">About the Author</a></li>
       </ul>
@@ -44,6 +45,7 @@
         <div class="mt-4 d-flex gap-3 flex-wrap">
           <a href="paper.html" class="btn btn-gold btn-lg">Read the Paper / கட்டுரை</a>
           <a href="architecture.html" class="btn btn-outline-gold btn-lg">Explore Architecture</a>
+          <a href="prototype.html" class="btn btn-outline-gold btn-lg">Try the Prototype / செயல்விளக்கம்</a>
         </div>
       </div>
       <div class="col-lg-5 text-center">
@@ -106,7 +108,15 @@
   <div class="container text-center">
     <h2 class="mb-3" style="color:var(--gold);">மேலும் அறிய / Go Deeper</h2>
     <div class="row g-4 justify-content-center">
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg">
+        <a href="prototype.html" class="text-decoration-none">
+          <div class="card card-accent maroon-accent h-100 p-4">
+            <h5>செயல்விளக்கம் / Prototype</h5>
+            <p class="mb-0 small">Three curated examples: மருட்கை explanation, நினைதல் image, and a five-state transition video.</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-lg">
         <a href="paper.html" class="text-decoration-none">
           <div class="card card-accent h-100 p-4">
             <h5>Paper</h5>
@@ -114,7 +124,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg">
         <a href="architecture.html" class="text-decoration-none">
           <div class="card card-accent h-100 p-4">
             <h5>Architecture</h5>
@@ -122,7 +132,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg">
         <a href="presentation.html" class="text-decoration-none">
           <div class="card card-accent h-100 p-4">
             <h5>Presentation</h5>
@@ -130,7 +140,7 @@
           </div>
         </a>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-6 col-lg">
         <a href="about.html" class="text-decoration-none">
           <div class="card card-accent h-100 p-4">
             <h5>About the Author</h5>

@@ -4,3 +4,4 @@
 architecture/*.visual-check.*
 .playwright-mcp/
 .claude/
+temp/
