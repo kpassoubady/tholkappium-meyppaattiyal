@@ -14,7 +14,7 @@ A Tamil research paper that compares the Tolkappiyam's Meyppaattiyal with modern
 
 | Material | Source | Download |
 |---|---|---|
-| Research paper | [Markdown](paper/paper.md) | [PDF](paper/paper.pdf) |
+| Research paper | [Markdown](paper/paper.md) | [PDF](docs/assets/paper.pdf) |
 | Presentation | — | [PPTX](presentation/presentation.pptx) · [PDF](presentation/presentation.pdf) |
 | State-transition diagram | [Mermaid](diagrams/state-transition.mmd) | [PNG](diagrams/state-transition.png) |
 | Conceptual-system diagram | [Mermaid](diagrams/system-architecture.mmd) | [PNG](diagrams/system-architecture.png) |

@@ -5,3 +5,12 @@ architecture/*.visual-check.*
 .playwright-mcp/
 .claude/
 temp/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.xdv
+/paper/main.pdf
+/paper/paper.pdf
+/paper/latex/main.pdf
