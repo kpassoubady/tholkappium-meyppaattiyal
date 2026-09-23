@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kpassoubady.github.io/tholkappium-meyppaattiyal/sitemap.xml
