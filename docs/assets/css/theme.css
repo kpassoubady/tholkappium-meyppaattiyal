@@ -54,6 +54,18 @@ a:hover {
   opacity: 0.92;
 }
 
+.conference-note {
+  max-width: 46rem;
+  padding: 0.85rem 1rem;
+  background-color: rgba(245, 240, 225, 0.09);
+  border-left: 4px solid var(--gold);
+  border-radius: 0.25rem;
+  color: var(--cream);
+}
+.conference-note p:last-child {
+  opacity: 0.86;
+}
+
 .pill-badge {
   display: inline-block;
   padding: 0.35rem 1rem;
