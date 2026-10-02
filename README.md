@@ -45,14 +45,15 @@ These are structural comparisons across distinct intellectual traditions. The pa
 
 ## மாநாடு / Conference
 
-Prepared for the **2nd World Tolkappiyam Research Conference**, Toronto, Canada, September 19–20, 2026. Conference reference: **தொ.மா.2098**.
+Presented at the **2nd World Tolkappiyam Research Conference**, Toronto, Canada, September 19–20, 2026. Conference reference: **தொ.மா.2098**.
 
-### தேர்வுச் சான்றுகள் / Selection records
+### மாநாட்டுச் சான்றுகள் / Conference records
 
 | Record | Document |
 |---|---|
 | Abstract selection notice, May 7, 2026 | [PDF](conference-records/Abstract_Selected_தொ.மா.2098.pdf) |
 | Full-article selection notice, August 23, 2026 | [PDF](conference-records/Article_Selected_தொ.மா.2098.pdf) |
+| Conference participation certificate, September 19–20, 2026 | [PDF](conference-records/Certificate_2098.pdf) · [PNG](conference-records/Certificate_2098.png) |
 
 ### மாநாட்டு ஆவணங்கள் / Conference materials
 
