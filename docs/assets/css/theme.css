@@ -110,6 +110,26 @@ a:hover {
   background-color: var(--pine-deep);
 }
 
+section[id],
+header[id] {
+  scroll-margin-top: 5rem;
+}
+
+.anchor-link {
+  font-size: 0.75em;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.35rem;
+  color: inherit;
+  opacity: 0.45;
+  transition: opacity 0.15s ease;
+}
+.anchor-link:hover,
+.anchor-link:focus-visible {
+  color: inherit;
+  opacity: 1;
+}
+
 .btn-gold {
   background-color: var(--gold);
   border-color: var(--gold);
